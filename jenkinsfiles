@@ -1,0 +1,12 @@
+node('built-in')
+ {
+   stage('Continuos Download') 
+     {
+       git 'https://github.com/sunildevops77/maven.git'
+       }
+
+   stage('Continuos BUILD') 
+     {
+       sh 'mvn package'
+       }
+       }
